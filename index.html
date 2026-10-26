@@ -1,4 +1,4 @@
-
+```html
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -10,178 +10,52 @@
 <title>Chá Revelação e Chá de Fraldas — Anthony ou Mavie</title>
 
 <style>
-:root{
-  --cream:#fff8ee;
-  --brown:#68452e;
-  --gold:#c18a49;
-  --pink:#f28ca7;
-  --blue:#70bfe9;
+:root {
+  --cream: #fff8ee;
+  --brown: #68452e;
+  --gold: #c18a49;
 }
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:linear-gradient(#fff9f0,#f7e8d4);
-  color:var(--brown);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--brown);
+  font-family: system-ui, Arial, sans-serif;
+  background: linear-gradient(#fff9f0, #f7e8d4);
 }
-main{max-width:760px;margin:auto;padding:14px}
-.hero{
-  overflow:hidden;border-radius:24px;
-  box-shadow:0 10px 35px #8b5e3020;background:#fff
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 14px;
 }
-.hero img{display:block;width:100%;height:auto}
-.panel{
-  margin:16px 0;padding:24px 18px;
-  background:#fffaf2;border:1px solid #e8c99d;
-  border-radius:22px;text-align:center;
-  box-shadow:0 7px 22px #8b5e3010
+.hero {
+  overflow: hidden;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 10px 35px #8b5e3020;
 }
-h1{font-size:clamp(1.55rem,5vw,2.3rem);margin:0 0 8px}
-h2{font-size:1.25rem;margin:0 0 10px}
-p{line-height:1.6}
-.details{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:10px;margin-top:18px
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.detail{
-  padding:13px 8px;background:#fff;
-  border-radius:14px;border:1px solid #f0dfc7;
-  overflow-wrap:anywhere
+.panel {
+  margin: 16px 0;
+  padding: 22px 16px;
+  background: #fffaf2;
+  border: 1px solid #e8c99d;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 7px 22px #8b5e3010;
 }
-.detail strong{
-  display:block;font-size:.83rem;
-  letter-spacing:.04em;color:#a36d35;margin-bottom:5px
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  margin: 0 0 8px;
 }
-.actions{display:grid;grid-template-columns:1fr;gap:10px;margin:16px 0}
-a.btn,button.btn{
-  display:block;width:100%;padding:15px 14px;
-  border:0;border-radius:14px;color:white;
-  text-decoration:none;font-size:1rem;font-weight:750;
-  cursor:pointer;box-shadow:0 5px 12px #00000012
-}
-.whatsapp{background:#159c63}
-.maps{background:#df3548}
-.gift{background:#268bd3}
-.note{font-size:.9rem;color:#8a684c}
-footer{text-align:center;padding:20px 8px 30px;font-style:italic}
-.modal{
-  display:none;position:fixed;inset:0;
-  background:#321d18a8;z-index:5;padding:18px;
-  align-items:center;justify-content:center
-}
-.modal.open{display:flex}
-.dialog{
-  max-width:420px;width:100%;padding:25px;
-  background:#fff9f0;border-radius:20px;
-  text-align:center;box-shadow:0 12px 50px #0004
-}
-.close{margin-top:12px;background:#78533b!important}
-@media(min-width:560px){
-  .details{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .actions{grid-template-columns:repeat(3,minmax(0,1fr))}
-}
-</style>
-</head>
+h2 { font-size: 1.2rem; }
+p { line-height: 1.6; }
 
-<body>
-<main>
-  <section class="hero" aria-label="Arte do convite">
-    <img src="ursinhos-convite.png"
-         alt="Convite Chá Revelação e Chá de Fraldas com ursinhos, balões azuis e rosas">
-  </section>
-
-  <section class="panel">
-    <h1>🧸 Chá Revelação & Chá de Fraldas</h1>
-    <p>
-      <strong>Anthony ou Mavie?</strong><br>
-      Um grande amor está chegando e queremos compartilhar esse momento especial com você!
-    </p>
-
-    <div class="details">
-      <div class="detail">
-        <strong>📅 DATA</strong>
-        28 de novembro de 2026
-      </div>
-      <div class="detail">
-        <strong>🕔 HORÁRIO</strong>
-        17:00
-      </div>
-      <div class="detail">
-        <strong>📍 ENDEREÇO</strong>
-        Rua Francisco Bento, 448 - Planalto
-      </div>
-    </div>
-  </section>
-
-  <section class="actions" aria-label="Ações do convite">
-    <a class="btn whatsapp"
-       href="https://wa.me/5585991044879?text=Ol%C3%A1%21%20Quero%20confirmar%20minha%20presen%C3%A7a%20no%20Ch%C3%A1%20Revela%C3%A7%C3%A3o%20e%20Ch%C3%A1%20de%20Fraldas%20de%20Anthony%20ou%20Mavie%2C%20no%20dia%2028%20de%20novembro%20de%202026%2C%20%C3%A0s%2017h.%20%F0%9F%92%99%F0%9F%A9%B7"
-       target="_blank" rel="noopener">
-       💬 Confirmar presença
-    </a>
-
-    <a class="btn maps"
-       href="https://www.google.com/maps/search/?api=1&query=Rua%20Francisco%20Bento%2C%20448%20-%20Planalto"
-       target="_blank" rel="noopener">
-       📍 Ver localização
-    </a>
-
-    <button class="btn gift" id="giftButton" type="button">
-      🍼 Sugestão
-    </button>
-  </section>
-
-  <section class="panel">
-    <h2>Será uma alegria enorme ter você com a gente! 💙🩷</h2>
-    <p>
-      Sua presença vai deixar esse dia ainda mais especial.
-      Venha celebrar, compartilhar carinho e descobrir se vem aí um príncipe ou uma princesa!
-    </p>
-    <p class="note">Com muito amor, a família de Anthony ou Mavie.</p>
-  </section>
-
-  <footer>Um pequeno bebê, um amor imenso. ♡</footer>
-</main>
-
-<div class="modal" id="giftModal" role="dialog"
-     aria-modal="true" aria-labelledby="giftTitle">
-  <div class="dialog">
-    <h2 id="giftTitle">🍼 Sugestão de presente</h2>
-    <p>Se desejar presentear nosso bebê, nossa sugestão é:</p>
-    <p><strong>🍼 Fralda tamanho P</strong></p>
-    <p><strong>🎁 E um mimo</strong></p>
-    <p>O mais importante é celebrar esse momento com você! 💛</p>
-    <button class="btn close" id="closeModal" type="button">
-      Fechar
-    </button>
-  </div>
-</div>
-
-<script>
-const modal = document.getElementById('giftModal');
-const giftButton = document.getElementById('giftButton');
-const closeButton = document.getElementById('closeModal');
-
-giftButton.addEventListener('click', () => {
-  modal.classList.add('open');
-});
-
-closeButton.addEventListener('click', () => {
-  modal.classList.remove('open');
-});
-
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.classList.remove('open');
-  }
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal.classList.remove('open');
-  }
-});
-</script>
-</body>
-</html>
+.details {
+  display: grid;
+  grid-
+```
