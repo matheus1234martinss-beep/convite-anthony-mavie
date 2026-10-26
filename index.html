@@ -1,61 +1,267 @@
-```html
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8ead8">
-<meta property="og:title" content="Chá Revelação e Chá de Fraldas — Anthony ou Mavie">
-<meta property="og:description" content="Um grande amor está chegando! Venha celebrar com a gente.">
-<title>Chá Revelação e Chá de Fraldas — Anthony ou Mavie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8ee">
+  <meta property="og:title" content="Chá Revelação e Chá de Fraldas — Anthony ou Mavie">
+  <meta property="og:description" content="Um grande amor está chegando! Venha celebrar com a gente.">
+  <title>Chá Revelação — Anthony ou Mavie</title>
 
-<style>
-:root {
-  --cream: #fff8ee;
-  --brown: #68452e;
-  --gold: #c18a49;
-}
-* { box-sizing: border-box; }
+  <style>
+    :root {
+      --cream: #fff8ee;
+      --brown: #68452e;
+      --gold: #c18a49;
+      --pink: #e9b8c5;
+      --blue: #b8d5e9;
+    }
 
-body {
-  margin: 0;
-  color: var(--brown);
-  font-family: system-ui, Arial, sans-serif;
-  background: linear-gradient(#fff9f0, #f7e8d4);
-}
-main {
-  max-width: 760px;
-  margin: auto;
-  padding: 14px;
-}
-.hero {
-  overflow: hidden;
-  border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 10px 35px #8b5e3020;
-}
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.panel {
-  margin: 16px 0;
-  padding: 22px 16px;
-  background: #fffaf2;
-  border: 1px solid #e8c99d;
-  border-radius: 22px;
-  text-align: center;
-  box-shadow: 0 7px 22px #8b5e3010;
-}
-h1 {
-  font-size: clamp(1.5rem, 5vw, 2.2rem);
-  margin: 0 0 8px;
-}
-h2 { font-size: 1.2rem; }
-p { line-height: 1.6; }
+    * { box-sizing: border-box; }
 
-.details {
-  display: grid;
-  grid-
-```
+    body {
+      margin: 0;
+      color: var(--brown);
+      font-family: system-ui, Arial, sans-serif;
+      background: linear-gradient(#fffaf4, #f3dfc5);
+    }
+
+    main {
+      max-width: 760px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    .hero, .panel {
+      overflow: hidden;
+      border-radius: 22px;
+      background: rgba(255, 250, 242, .96);
+      border: 1px solid #e8c99d;
+      box-shadow: 0 10px 30px #8b5e3015;
+    }
+
+    .hero { text-align: center; }
+
+    .banner {
+      padding: 32px 18px;
+      background:
+        radial-gradient(circle at 15% 20%, #ffffffcc 0 5px, transparent 6px),
+        radial-gradient(circle at 85% 30%, #ffffffbb 0 7px, transparent 8px),
+        linear-gradient(135deg, #f2dfc5, #fff8ee, #efd9df);
+    }
+
+    .decor { font-size: 2rem; letter-spacing: 5px; }
+
+    .eyebrow {
+      margin: 12px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: .78rem;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 8vw, 3.3rem);
+      line-height: 1.15;
+    }
+
+    h2 { font-family: Georgia, serif; }
+
+    .subtitle { font-size: 1.1rem; }
+
+    .panel {
+      margin-top: 16px;
+      padding: 24px 18px;
+      text-align: center;
+    }
+
+    p { line-height: 1.7; }
+
+    .names {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .name-card {
+      padding: 20px 8px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid #ead6bb;
+    }
+
+    .name-card:first-child { background: #f9e7ed; }
+    .name-card:last-child { background: #e7f1f8; }
+
+    .name-card strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .detail {
+      padding: 15px;
+      border-radius: 14px;
+      background: white;
+    }
+
+    .detail strong { display: block; margin-bottom: 5px; }
+
+    .button {
+      display: inline-block;
+      margin: 7px 4px;
+      padding: 13px 20px;
+      border-radius: 30px;
+      background: var(--brown);
+      color: white;
+      text-decoration: none;
+      font-weight: 650;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--brown);
+      border: 1px solid #d9b98e;
+    }
+
+    .note {
+      font-size: .9rem;
+      opacity: .85;
+    }
+
+    footer {
+      padding: 24px 8px;
+      text-align: center;
+      font-family: Georgia, serif;
+    }
+
+    @media (min-width: 540px) {
+      .details { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="hero">
+      <div class="banner">
+        <div class="decor" aria-hidden="true">♡ ✨ ♡</div>
+        <p class="eyebrow">Um amor que já transforma tudo</p>
+        <h1>Anthony ou Mavie?</h1>
+        <p class="subtitle">Chá Revelação & Chá de Fraldas</p>
+        <p>Uma doce surpresa está chegando!</p>
+        <div class="decor" aria-hidden="true">☁️ 🧸 ☁️</div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Você faz parte dessa história!</h2>
+      <p>
+        Estamos vivendo a espera mais especial das nossas vidas
+        e queremos dividir esse momento com pessoas queridas.
+        Venha celebrar conosco e descobrir se nosso bebê será
+        o Anthony ou a Mavie!
+      </p>
+
+      <div class="names">
+        <div class="name-card">
+          <span aria-hidden="true">💙</span>
+          <strong>Anthony</strong>
+          <span>Nosso príncipe?</span>
+        </div>
+        <div class="name-card">
+          <span aria-hidden="true">💗</span>
+          <strong>Mavie</strong>
+          <span>Nossa princesa?</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Vamos comemorar?</h2>
+      <p>Reserve essa data para compartilhar nossa alegria.</p>
+
+      <div class="details">
+        <div class="detail">
+          <strong>📅 Data</strong>
+          <span>A definir</span>
+        </div>
+        <div class="detail">
+          <strong>🕒 Horário</strong>
+          <span>A definir</span>
+        </div>
+        <div class="detail">
+          <strong>📍 Local</strong>
+          <span>A definir</span>
+        </div>
+        <div class="detail">
+          <strong>🎁 Carinho</strong>
+          <span>Fraldas e muito amor</span>
+        </div>
+      </div>
+
+      <p class="note">
+        Os dados do evento podem ser atualizados quando estiverem confirmados.
+      </p>
+
+      <a class="button" id="confirmar" href="#confirmar">
+        Confirmar presença
+      </a>
+      <button class="button secondary" id="compartilhar" type="button">
+        Compartilhar convite
+      </button>
+      <p id="mensagem" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer>
+      Feito com amor para celebrar a chegada do nosso bebê. ♡
+    </footer>
+  </main>
+
+  <script>
+    const mensagem = document.getElementById("mensagem");
+
+    document.getElementById("confirmar").addEventListener("click", function (event) {
+      event.preventDefault();
+      mensagem.textContent =
+        "Adicione o contato ou o link de confirmação dos anfitriões para confirmar sua presença.";
+    });
+
+    document.getElementById("compartilhar").addEventListener("click", async function () {
+      const dados = {
+        title: document.title,
+        text: "Venha celebrar o chá revelação do Anthony ou da Mavie!",
+        url: window.location.href
+      };
+
+      try {
+        if (navigator.share) {
+          await navigator.share(dados);
+        } else if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(dados.url);
+          mensagem.textContent = "Link do convite copiado!";
+        } else {
+          mensagem.textContent = "Copie o link do navegador para compartilhar: " + dados.url;
+        }
+      } catch (erro) {
+        if (erro.name !== "AbortError") {
+          mensagem.textContent = "Você pode copiar o link do navegador para compartilhar.";
+        }
+      }
+    });
+  </script>
+</body>
+</html>
